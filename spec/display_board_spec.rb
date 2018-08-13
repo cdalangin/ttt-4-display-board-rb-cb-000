@@ -46,7 +46,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with an X in the center and an O in the top left' do
       board = ["O", " ", " ", " ", "X", " ", " ", " ", " "]
-      board[0] = "O"
+      board[0] = " O"
       board[4] = "X"
 
       output = capture_puts{ display_board(board) }
