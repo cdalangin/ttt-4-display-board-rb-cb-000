@@ -3,7 +3,7 @@ require_relative"../lib/display_board.rb"
 describe "#display_board in 'lib/display_board.rb" do
   context 'various game situations' do
     it 'prints a blank board when the board array is empty' do
-      board = ["  ","  ","  ","  ","  ","  ","  ","  ","  "]
+      board = [" "," "," "," "," "," "," "," "," "]
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
@@ -32,7 +32,7 @@ describe "#display_board in 'lib/display_board.rb" do
     it 'prints a board with O in the top left' do
       board = ["O", " ", " ", " ", " ", " ", " ", " ", " "]
       # Leave hint for assigning the 0 index value of O
-      board[0] = " O"
+      board[0] = "O"
 
       output = capture_puts{ display_board(board) }
       rows = output.split("\n")
@@ -46,7 +46,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
     it 'prints a board with an X in the center and an O in the top left' do
       board = ["O", " ", " ", " ", "X", " ", " ", " ", " "]
-      board[0] = " O"
+      board[0] = "O"
       board[4] = "X"
 
       output = capture_puts{ display_board(board) }
