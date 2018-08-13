@@ -11,7 +11,7 @@ def display_board(board)
 
 
   board = [" "," "," "," "," "," "," "," "," "]
-  display_board(board)
+  puts display_board(board)
 
   board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
   display_board(board)
@@ -23,4 +23,7 @@ def display_board(board)
   display_board(board)
 
   board = ["O", "O", "O", "O", "O", "O", "O", "O", "O"]
+  display_board(board)
+
+  board = ["O", "X", " ", " ", "X", " ", "X", "O", " "]
   display_board(board)
